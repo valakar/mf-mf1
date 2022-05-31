@@ -7,7 +7,7 @@ const routes: Routes = [{
 	path: '',
 	component: SubPage1Component
 }, {
-	path: '/sub-page2',
+	path: 'sub-page2',
 	component: SubPage2Component
 }];
 
