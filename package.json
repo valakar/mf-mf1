@@ -4,6 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4202",
+    "start:dev": "ng serve -c dev --port 4203",
+    "start:qa": "ng serve -c=qa --port 4204",
+    "start:prod": "ng serve -c production --port 4205",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -17,12 +20,13 @@
     "@angular/compiler": "~13.3.0",
     "@angular/core": "~13.3.0",
     "@angular/forms": "~13.3.0",
+    "@angular/material": "13.3.0",
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "useless-lib": "1.0.0",
+    "useless-lib": "^1.0.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

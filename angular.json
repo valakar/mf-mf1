@@ -67,6 +67,34 @@
 							"extractLicenses": false,
 							"sourceMap": true,
 							"namedChunks": true
+						},
+						"dev": {
+							"buildOptimizer": false,
+							"optimization": false,
+							"vendorChunk": true,
+							"extractLicenses": false,
+							"sourceMap": true,
+							"namedChunks": true,
+							"fileReplacements": [
+								{
+									"replace": "src/environments/environment.ts",
+									"with": "src/environments/environment.dev.ts"
+								}
+							]
+						},
+						"qa": {
+							"buildOptimizer": false,
+							"optimization": false,
+							"vendorChunk": true,
+							"extractLicenses": false,
+							"sourceMap": true,
+							"namedChunks": true,
+							"fileReplacements": [
+								{
+									"replace": "src/environments/environment.ts",
+									"with": "src/environments/environment.qa.ts"
+								}
+							]
 						}
 					},
 					"defaultConfiguration": "production"
@@ -75,11 +103,20 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
+							"port": 4205,
 							"browserTarget": "mf1:build:production",
 							"extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
 							"browserTarget": "mf1:build:development"
+						},
+						"qa": {
+							"port": 4204,
+							"browserTarget": "mf1:build:qa"
+						},
+						"dev": {
+							"port": 4203,
+							"browserTarget": "mf1:build:dev"
 						}
 					},
 					"defaultConfiguration": "development",

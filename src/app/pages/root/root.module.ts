@@ -10,7 +10,7 @@ import { RootComponent } from './containers/root/root.component';
   ],
   imports: [
     CommonModule,
-    RootRoutingModule
+    RootRoutingModule,
   ]
 })
 export class RootModule { }

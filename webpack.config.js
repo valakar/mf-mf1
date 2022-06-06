@@ -46,8 +46,9 @@ module.exports = {
                 '@angular/common': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
                 '@angular/common/http': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
                 '@angular/router': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-                'useless-lib': { singleton: true, strictVersion: true },
-
+                'useless-lib': { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+                // '@angular/material': { singleton: true, strictVersion: true, requiredVersion: '13.3.1' },
+                // "@angular/material/snack-bar": { singleton: true, strictVersion: true },
                 ...sharedMappings.getDescriptors(),
             }),
 

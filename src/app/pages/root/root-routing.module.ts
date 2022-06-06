@@ -26,6 +26,6 @@ const routes: Routes = [
 @NgModule({
 	imports: [RouterModule.forChild(routes)],
 	exports: [RouterModule],
-	providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+	// providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
 })
 export class RootRoutingModule {}

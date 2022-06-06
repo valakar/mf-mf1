@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://local',
-  title: 'Local MFE1 env'
+  apiUrl: 'http://dev',
+  title: 'Dev MFE1 env'
 };
 
 /*
