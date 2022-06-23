@@ -103,6 +103,7 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
+							"publicHost": "http://localhost:4205",
 							"port": 4205,
 							"browserTarget": "mf1:build:production",
 							"extraWebpackConfig": "webpack.prod.config.js"
@@ -112,10 +113,12 @@
 						},
 						"qa": {
 							"port": 4204,
+							"publicHost": "http://localhost:4204",
 							"browserTarget": "mf1:build:qa"
 						},
 						"dev": {
 							"port": 4203,
+							"publicHost": "http://localhost:4203",
 							"browserTarget": "mf1:build:dev"
 						}
 					},

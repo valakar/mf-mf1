@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // @ts-ignore
 import * as uselessLib from 'useless-lib';
 import { environment } from '../../../../../environments/environment';
+import { FakeApiService } from '../../fake-api.service';
 // @ts-ignore
 let pack = require('../../../../../../package.json')
 
@@ -16,6 +17,11 @@ export class RootComponent {
   title = environment.title;
   apiUrl = environment.apiUrl;
 
-  constructor() { }
+  constructor(private readonly fakeApi: FakeApiService) {
 
+  }
+
+  onApiCall() {
+    this.fakeApi.getSomething().subscribe()
+  }
 }

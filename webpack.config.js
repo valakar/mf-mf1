@@ -33,6 +33,7 @@ module.exports = {
             filename: 'remoteEntry.js',
             exposes: {
                 './MF1Module': './src/app/pages/root/root.module.ts',
+                './MF2Module': './src/app/pages/home/home.module.ts'
             },
 
             // For hosts (please adjust)
