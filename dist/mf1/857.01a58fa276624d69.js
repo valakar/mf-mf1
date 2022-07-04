@@ -1,0 +1,1 @@
+(self.webpackChunkmf1=self.webpackChunkmf1||[]).push([[857],{6857:(n,i,s)=>{var e=!1,r=s(7144).i8;n.exports={version:r,turnOn:function(){e=!0,setTimeout(function(){e=!1},0)},isOn:function(){return e}}},7144:n=>{n.exports={i8:"1.0.0"}}}]);
