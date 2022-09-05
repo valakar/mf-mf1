@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://local',
+  apiUrl: 'https://fakestoreapi.com/products/1',
   title: 'Local MFE1 env'
 };
 
